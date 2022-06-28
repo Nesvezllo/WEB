@@ -1,0 +1,193 @@
+.bp{
+    float: left;
+    width: 32%;
+    margin: 10px;
+    zoom: 100%;
+}
+#zagolovok{
+    font-size: 22px;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.k-block{
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+}
+
+@media (max-width: 650px) {
+    .site{zoom: .8;}
+
+    .bp{margin: 0px;
+width: auto;
+    }
+    #zagolovok{
+        font-size: 22px;}
+}
+
+@media (max-width: 1400px) {
+    .site{zoom: .95;}
+
+    .bp{margin: 0px;
+width: auto;
+    }
+    #zagolovok{
+        font-size: 16px;
+}
+
+
+/* //////////////////////////////////////////////////////////////////////////// */
+
+*{transition: all 0.3s linear;}
+
+
+
+.hidden{
+  font-size: 0;
+  display: block;
+  width: 100%;
+  zoom: 1;
+}
+
+.heading{
+  font-family: 'Amatic SC', cursive;
+  font-size: 5em;
+  margin: 0;
+  float: right;
+  width: 50%;
+  text-align: right;
+  padding: -2% -19% 0% 20%;
+}
+
+.like,p{
+  color: #ffffff;
+}
+
+.like-toggle{
+  outline:none;
+  box-shadow:none;
+  border: none;
+  width: 40px;
+  height: 30px;
+  zoom: .7;
+  font-size: 1.5em;
+  border-radius: 100px;
+}
+
+.like-active.basic{
+    zoom: .7;
+  background: #00ff15;
+  color: white;
+}
+
+.like-toggle.basic2{
+  border: none;
+  width: 30px;
+  height: 30px;
+  font-size: 1.3em;
+  border-radius: 100px;
+  background: #F26C4F;
+  color: #fff;
+  zoom: .7;
+}
+
+.like-active.basic2{
+  background: #F06EA9;
+}
+
+.like-toggle.basic2:not(.like-active):hover{
+  background: #438CCA;
+  width: 60px;
+}
+
+.like-toggle.basic3{
+  border: none;
+  width: 30px;
+  height: 30px;
+  font-size: 1.3em;
+  border-radius: 100px;
+  background: #438CCA;
+  color: #fff;
+  margin-bottom: 10px;
+  zoom: .7;
+}
+
+.like-active.basic3{
+  background: #7CC576;
+  transform: rotate(-360deg);
+}
+
+.like-toggle.basic3:not(.like-active):hover{
+  background: #F26C4F;
+  transform: rotate(90deg);
+}
+
+
+/*//////////////////////////////////////////////ЧЕКБОКСЫ////////////////////////////////////////*/
+.b{
+    margin: 12%;
+    width: 100%;
+    
+    float: left;
+    
+  }
+  .site{
+      font-size: 1.3vw;
+      margin-top: 2%;
+      width: 100%;
+  }
+  
+  label {
+    display:block;
+    margin:4%;
+    position: relative; 
+    padding-left:32px; 
+    cursor: pointer;
+  }
+  label input[type=radio] {
+    position: absolute; 
+    opacity: 0;
+    width:0; 
+    height:0;
+  }
+  
+  label span {
+    position: absolute;
+   
+    top:0;
+    left:0;
+    width:20px; 
+    height:20px;
+    background-color: #ddd;
+    border-radius: 50%;
+    transition: .4s background-color; 
+  }
+ 
+  label span:after {
+    content: "";
+    position: absolute;
+    display: none;
+    
+ 
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    background-color:#fff;
+    width:8px;
+    height:8px;
+    border-radius:50%;
+  }
+  label:hover span {
+    background-color: #ccc;
+  }
+  
+
+  label input:checked ~ span {
+    background-color: #dc2ebf;
+  }
+  label input:checked ~ span:after {
+    display:block;
+  }
+  
+}
